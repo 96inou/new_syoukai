@@ -41,7 +41,8 @@ header{
 /* ーーーーーヘッダーここまでーーーーー */
 .ue{
     height: 100vh;
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/ori100.png);
+    background-position: -10%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -98,12 +99,28 @@ p{
     font-size: 20px;
   }
   /* ーーーーーフッターここまでーーーーー */
+  @media screen and (max-width: 1280px){
+    header{
+        padding: 5px 10px;
+    }
+    .header-right li{
+        margin-left: 50px;  
+        }
+    .ue{
+        background-position: right;
+    }
+}
+/* ーーーブレイクポイント１ーーー */
   @media screen and (max-width: 780px) {
+
     .header-left span{
         font-size: 30px;
     }
     .header-right ul{
         font-size: 20px;
+    }
+    header{
+        padding: 5px 10px;
     }
     /* ーーーヘッダーここまでーーー */
     .name{
@@ -114,7 +131,7 @@ p{
     }
     .ue{
       height: 50vh;
-      /* width: 56vh; */
+      background-position: right;
     }
     /* ーーーセクション1ここまでーーー */
     .mannaka p{
@@ -122,5 +139,27 @@ p{
     }
     .mannaka img{
         height: 15vh;
+        margin: 20px 20px;
+    }
+
+    }
+    /* ーーー作品ここまでーーー */
+    form p{
+        font-size: 30px;
+    }
+    form ul{
+        font-size:24px ;
+    }
+    textarea{
+        width: 50%;
+    }
+    /* ーーー問い合わせここまでーーー */
+    /* ーーーブレイクポイント２ーーー */
+    @media screen and (max-width:280px){
+    .header-right li{
+            margin-left: 10px;  
+    }
+    .sakuhin img{
+        margin: 20px 5px;
     }
     }
